@@ -12,7 +12,17 @@ const person = {
     return 2017 - this.age;
   }
 }
-let val
+let val;
+
+val = person.firstName;
+val = person['lastName'];
+val = person.age;
+val = person.hobbies[1];
+val = person.address.state;
+val = person.address['city'];
+val = person.getBirthYear();
+
+console.log(val);
 
 person.name = 'Sara';
 person.age = 32
